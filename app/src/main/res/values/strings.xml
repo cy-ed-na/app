@@ -3,4 +3,14 @@
     <string name="title_activity_layoutactivity">Layoutactivity</string>
     <string name="title_activity_intentactivity">Intentactivity</string>
     <string name="title_activity_intent">IntentActivity</string>
+    <string name="title_activity_form">FormActivity</string>
+    <string name="title_activity_destination">DestinationActivity</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+    <string name="title_activity_woof">WoofActivity</string>
+    <string name="title_activity_first_screen">FirstScreen</string>
+    <string name="title_activity_splash">Morning</string>
+    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_activity_cart">CartActivity</string>
+    <string name="title_activity_paycart">PaycartActivity</string>
+    <string name="title_activity_chairs">ChairsActivity</string>
 </resources>

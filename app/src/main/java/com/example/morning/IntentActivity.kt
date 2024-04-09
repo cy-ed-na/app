@@ -6,6 +6,7 @@ import android.provider.MediaStore
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -33,8 +34,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import com.example.morning.ui.theme.MorningTheme
 
@@ -219,6 +222,17 @@ fun MyIntents(){
         }
 
         Spacer(modifier = Modifier.height(20.dp))
+
+        androidx.compose.material3.Text(
+            text = "Already have an account? Login",
+            fontSize = 15.sp,
+            modifier = Modifier
+                .fillMaxWidth()
+                .clickable {
+                           mContext.startActivity(Intent(mContext,FormActivity::class.java))
+                },
+            textAlign = TextAlign.Center)
+
 
     }
 

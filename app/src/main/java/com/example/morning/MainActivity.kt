@@ -89,10 +89,13 @@ fun Text(){
           modifier = Modifier.fillMaxWidth(),
           horizontalAlignment = Alignment.CenterHorizontally
       ) {
-          Button(onClick = {/*TODO*/},
+          Button(onClick = {
+              mContext.startActivity(
+                  Intent(mContext,WoofActivity::class.java))
+          },
               colors = ButtonDefaults.buttonColors(Color.Blue)
           )
-          { Text("See More") }
+          { Text("Woof") }
       }
 
       Spacer(modifier = Modifier.height(10.dp))
@@ -145,6 +148,21 @@ fun Text(){
 
       ) {
           androidx.compose.material3.Text(text = "Continue")
+      }
+      Spacer(modifier = Modifier.height(10.dp))
+
+      Button(
+          onClick = {
+                    mContext.startActivity(Intent(mContext,DestinationActivity::class.java))
+          },
+          shape = RoundedCornerShape(5.dp),
+          colors = ButtonDefaults.buttonColors(Color.Blue),
+          modifier = Modifier
+              .fillMaxWidth()
+              .padding(start = 30.dp, end = 30.dp)
+
+      ) {
+          androidx.compose.material3.Text(text = "Destination")
       }
       
 
